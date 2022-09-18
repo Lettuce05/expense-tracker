@@ -1,0 +1,17 @@
+.mainNav {
+  background-color: #e9e9ed;
+  border-radius: 10px;
+}
+
+.btn {
+  padding: .75rem 1.5rem;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+.btn-active {
+    background: rgb(0,190,242);
+background: linear-gradient(131deg, rgba(0,190,242,1) 0%, rgba(0,192,182,1) 65%, rgba(0,164,153,1) 100%); 
+  color: white;
+}
