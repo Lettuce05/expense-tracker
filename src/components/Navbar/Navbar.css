@@ -1,5 +1,5 @@
 .mainNav {
-  background-color: #e9e9ed;
+  background-color: #fff;
   border-radius: 10px;
 }
 
@@ -7,7 +7,9 @@
   padding: .75rem 1.5rem;
   border: none;
   border-radius: 10px;
-  font-weight: bold;
+  font-weight: bold;  
+  background-color: #fff;
+  
 }
 
 .btn-active {
