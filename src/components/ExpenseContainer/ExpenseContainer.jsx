@@ -2,7 +2,7 @@ import { useSelector, useDispatch } from "react-redux";
 import Expense from '../Expense/Expense';
 // import { setView } from '../../features/transactions/transactionsSlice';
 
-export default function Overview() {
+export default function ExpenseContainer() {
   const { transactions } = useSelector((state) => state.transactions)
   return (
     <section>
