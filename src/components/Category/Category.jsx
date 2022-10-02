@@ -14,12 +14,8 @@ export default function Category({ category }) {
 
   return (
     <div className='category'>
-      <div className='categoryContainer'>
-        <span className='categoryName'>{category.name}</span>
-      </div>
-      <div className='infoContainer'>
-        <p className='amount'>{formatAmount(category.amount)}</p>
-      </div>
+        <div className='categoryName'>{category.name}</div>
+        <div className='amount'>{formatAmount(category.amount)}</div>
     </div>
   )
 }

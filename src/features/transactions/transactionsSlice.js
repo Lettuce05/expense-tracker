@@ -49,6 +49,22 @@ const testData = [
     amount: -35.65,
     note: 'test note'
   },
+  {
+    id: 7,
+    category: 'Main Income',
+    name: 'Light & Wonder',
+    date: new Date().toString(),
+    amount: 600,
+    note: 'test note'
+  },
+  {
+    id: 8,
+    category: 'Coding Projects',
+    name: 'Range Keeper',
+    date: new Date().toString(),
+    amount: 50,
+    note: 'test note'
+  },
 ]
 
 const initialState = {

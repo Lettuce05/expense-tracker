@@ -28,12 +28,16 @@ function getCategories(categories, arr) {
 }
 
 export default function CategoryContainer() {
-  const { transactions } = useSelector((state) => state.transactions);
+  const { transactions, view } = useSelector((state) => state.transactions);
 
-  const categories = getCategories(findUniqueCategories(transactions), transactions);
+  let categories = getCategories(findUniqueCategories(transactions), transactions);
 
-
-
+  if(view == 'income'){
+    categories = categories.filter(category => category.amount > 0);
+  } else if(view == 'expenses'){
+    categories = categories.filter(category => category.amount < 0);
+  }
+  
   return (
     <section className='categoryContainer'>
       {categories.map((category) => <Category key={category.name} category={category} />)}
