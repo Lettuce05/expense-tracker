@@ -1,18 +1,22 @@
 import { useSelector } from 'react-redux';
-import ExpenseContainer from './components/ExpenseContainer/ExpenseContainer';
-import Navbar from './components/Navbar/Navbar';
+import CategoriesScreen from './components/CategoriesScreen/CategoriesScreen';
 
 import './App.css'
 
+function getScreen(screen) {
+  if (screen === 'categoryScreen') {
+
+  } else {
+    return <CategoriesScreen />
+  }
+}
 
 function App() {
-  const { view } = useSelector((state) => state.transactions);
+  const { screen } = useSelector((state) => state.screenManager);
 
   return (
     <div className="App">
-      <h1>Transactions</h1>
-      <Navbar />
-      <ExpenseContainer />
+      {getScreen(screen)}
     </div>
   )
 }

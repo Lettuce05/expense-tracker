@@ -14,7 +14,7 @@ const testData = [
     category: 'Food',
     name: 'McDonalds',
     date: new Date().toString(),
-    amount: 500,
+    amount: -500,
     note: 'test note'
   },
   {
@@ -22,7 +22,7 @@ const testData = [
     category: 'Entertainment',
     name: 'AMC',
     date: new Date().toString(),
-    amount: 35.65,
+    amount: -35.65,
     note: 'test note'
   },
   {
@@ -38,7 +38,7 @@ const testData = [
     category: 'Food',
     name: 'Metro Pizza',
     date: new Date().toString(),
-    amount: 500,
+    amount: -500,
     note: 'test note'
   },
   {
@@ -46,7 +46,7 @@ const testData = [
     category: 'Entertainment',
     name: 'UNLV Tickets',
     date: new Date().toString(),
-    amount: 35.65,
+    amount: -35.65,
     note: 'test note'
   },
 ]
